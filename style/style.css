@@ -1,26 +1,52 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Catagory Section */
+body {
+  font-family: Arial, sans-serif;
+  background-color: wheat;
+}
+.container {
+  text-align: center;
+  margin: 40px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.category-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #FFE699;
+  border-radius: 15px;
+  padding: 20px;
+  width: 190px; 
+  height: 240px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 55px; 
+  height: 55px;
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-size: 17px; 
+  margin: 0;
+  color: #333;
+}
+.card p {
+  font-size: 13px;
+}
 
 
 
@@ -48,7 +74,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 46%; 
+  width: 60%; 
   height: 300px; 
   display: flex;
   justify-content: center;
@@ -102,4 +128,90 @@ body {
 
 .second-card {
   background: linear-gradient(135deg, #fdd475, #ffd9a1); 
+}
+/* Footer And Above */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* body {
+  background-color: ;
+} */
+
+.pawsome-news {
+  background-color: wheat;
+  padding: 50px 0;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dog-image {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.news-content h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.news-content p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.email-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-button:hover {
+  background-color: #FFDC26;
+}
+
+footer {
+  background-color: #fff6d5;
+  padding: 30px 0;
+}
+
+.footer-links, .footer-nav, .footer-social {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-nav a, .footer-social a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
 }
