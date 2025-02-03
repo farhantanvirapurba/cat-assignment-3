@@ -1,29 +1,38 @@
 
 /* Catagory Section */
+/* Category Section */
 body {
   font-family: Arial, sans-serif;
   background-color: wheat;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
   text-align: center;
-  margin: 40px;
+  margin: 40px auto;
+  max-width: 1200px; /* Ensures a max width on larger screens */
 }
+
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 .category-cards {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
+
 .card {
   background-color: #FFE699;
   border-radius: 15px;
   padding: 20px;
-  width: 190px; 
-  height: 240px; 
+  width: 190px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,19 +40,23 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
+
 .card img {
-  width: 55px; 
+  width: 55px;
   height: 55px;
   margin-bottom: 10px;
 }
+
 .card h3 {
-  font-size: 17px; 
+  font-size: 17px;
   margin: 0;
   color: #333;
 }
+
 .card p {
   font-size: 13px;
 }
@@ -140,7 +153,7 @@ body {
 /* body {
   background-color: ;
 } */
-
+/* pawsome news */
 .pawsome-news {
   background-color: wheat;
   padding: 50px 0;
@@ -196,22 +209,211 @@ body {
   border-radius: 5px;
 }
 
-.subscribe-button:hover {
-  background-color: #FFDC26;
-}
-
 footer {
   background-color: #fff6d5;
   padding: 30px 0;
 }
 
-.footer-links, .footer-nav, .footer-social {
+.footer-links, .footer-nav {
   text-align: center;
   margin-bottom: 15px;
 }
 
-.footer-nav a, .footer-social a {
+.footer-nav a {
   text-decoration: none;
   color: #333;
   margin: 0 10px;
+}
+/* Responsive Section */
+/* catagory responsive */
+/* For tablets and smaller desktops (width less than 1024px) */
+@media (max-width: 1024px) {
+  .category-cards {
+    gap: 15px;
+  }
+  .card {
+    width: 160px;
+    height: 220px;
+  }
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* For large mobile phones and smaller tablets (width less than 768px) */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+  .card {
+    width: 140px;
+    height: 200px;
+  }
+  .card img {
+    width: 45px;
+    height: 45px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+}
+
+/* For small mobile phones (width less than 480px) */
+@media (max-width: 480px) {
+  .category-cards {
+    flex-direction: column; 
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    max-width: 300px; /* Ensures the card doesn't get too wide */
+    height: auto;
+  }
+  .card img {
+    width: 40px;
+    height: 40px;
+  }
+  .card h3 {
+    font-size: 15px;
+  }
+  .card p {
+    font-size: 11px;
+  }
+}
+/* Everyday low price */
+/* For tablets and smaller desktops (width less than 1024px) */
+@media (max-width: 1024px) {
+  .product-card {
+    width: 45%; 
+    height: 280px;
+  }
+  .product-title {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 22px;
+  }
+}
+
+/* For tablets and large mobile phones (width less than 768px) */
+@media (max-width: 768px) {
+  .products {
+    justify-content: center; 
+  }
+  .product-card {
+    width: 70%;
+    height: auto; 
+  }
+  .product-title {
+    font-size: 16px;
+  }
+  .product-price {
+    font-size: 12px;
+  }
+  .price {
+    font-size: 20px;
+  }
+}
+
+/* For small mobile phones (width less than 480px) */
+@media (max-width: 480px) {
+  .product-card {
+    width: 90%; 
+    /* height: auto; */
+    flex-direction: column;
+  }
+  .product-card img {
+    max-width: 60%; 
+  }
+  .product-title {
+    font-size: 14px;
+  }
+  .product-price, .price {
+    font-size: 18px;
+  }
+}
+/* pawsome news */
+
+/* For tablets and smaller desktops (width less than 1024px) */
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .dog-image {
+    width: 120px; /* Reduce image size */
+    margin: 0 auto 20px;
+  }
+
+  .news-content h2 {
+    font-size: 24px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .email-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-button {
+    width: 100%; /* Make button full width */
+  }
+}
+
+/* For large mobile phones and tablets (width less than 768px) */
+@media (max-width: 768px) {
+  .dog-image {
+    width: 100px; /* Further reduce image size */
+  }
+
+  .news-content h2 {
+    font-size: 22px;
+  }
+
+  .subscribe-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+}
+
+/* For small mobile phones (width less than 480px) */
+@media (max-width: 480px) {
+  .dog-image {
+    width: 80px;
+  }
+
+  .news-content h2 {
+    font-size: 20px;
+  }
+
+  .news-content p {
+    font-size: 14px;
+  }
+
+  .subscribe-button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+
+  .footer-nav a {
+    margin: 0 5px;
+  }
 }
