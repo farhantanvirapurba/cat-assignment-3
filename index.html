@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="style/style.css">
+    <!-- Daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+     <!-- Colour -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'navbar-colour': '#FFF9F4',
+                'navbar-btn': '#FFDC26',
+                  'card-bg': '#F9DF8A',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- Header Section -->
+     <header class="md:container mx-auto">
+        <nav class="navbar-colour gap-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li>
+                        <a>Breeds</a>
+                      </li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl"><img src="./c1-assets/logo-header.png" alt=""> Browse<span class="text-yellow-500">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li>
+                        <summary>Breeds</summary>
+                    </li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-outline btn-warning ">Warning</button>
+                    <a class="btn bg-navbar-btn ">Register</a>
+                </div>
+              </div>
+        </nav>
+     <!-- Section Pamper Your Pet, Because They Deserve the Bes -->
+      <section class="space-x-2.5 space-y-2.5 mt-12">
+        <div class="flex">
+<div class="my-2 ml-11	gap-5">
+  <h2 class="text-4xl font-bold ">Pamper Your Pet,<br> Because They Deserve <br> the Bes
+  </h2>
+  <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+  <button class="btn bg-navbar-btn ">Find a Pet</button>
+</div>
+ <div class="left-1/4  "><img src="./c1-assets/cat-big.png" alt="">
+</div>
+        </div>
+      </section>
+      </header>
+      <!-- Main Section -->
+      <main>
+        <!-- Browse By Categories -->
+        <section id="browse-categories">
+          <h2 class="font-bold text-4xl" id="catagory-h2">Browse By Categories</h2>
+          <div class="category-container">
+            <div class="category">
+              <img src="./c1-assets/dog-cartoon.png" alt="Dog">
+              <h3>Dog</h3>
+              <p>3 Items</p>
+            </div>
+            <div class="category">
+              <img src="./c1-assets/fish-cartoon.png" alt="Fish">
+              <h3>Fish</h3>
+              <p>3 Items</p>
+            </div>
+            <div class="category">
+              <div class="circle"></div>
+              <img src="./c1-assets/cat-cartoon.png" alt="Cat">
+              <h3>Cat</h3>
+              <p>3 Items</p>
+            </div>
+            <div class="category">
+              <div class="circle"></div>
+              <img src="./c1-assets/bird-cartoon.png" alt="Bird">
+              <h3>Birds</h3>
+              <p>3 Items</p>
+            </div>
+            <div class="category">
+              <div class="circle"></div>
+              <img src="./c1-assets/mouse-cartoon.png" alt="Small Pet">
+              <h3>Small Pet</h3>
+              <p>3 Items</p>
+            </div>
+            <div class="category">
+              <div class="circle"></div>
+              <img src="./c1-assets/rabbit-cartoon.png" alt="Rabbit">
+              <h3>Rabbit</h3>
+              <p>2 Items</p>
+            </div>
+          </div>
+        </section>
+    <hr>
+    <section class="container mx-auto px-4 py-10">
+      <!-- H1 -->
+       <h2>Trending Pet Products</h2>
+       <div class="card card-compact bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="text-right"
+            src="./c1-assets/cute-pet-small.png"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="section-title">Everyday low Price</div>
+      <div class="products">
+          <div class="product-card first-card">
+              <div class="product-content">
+                  <img src="./c1-assets/cute-dog-mid.png" alt="Dog">
+                  <p class="product-price">Under Price</p>
+                  <h2 class="product-title">Pet Grooming Mitt</h2>
+                  <p class="product-description">(Easy Hair Removal)</p>
+                  <span class="price">$7.99</span>
+              </div>
+          </div>
+      
+          <div class="product-card second-card">
+              <div class="product-content">
+                  <img src="./c1-assets/cute-pet-small.png" alt="Dogs2">
+                  <h2 class="product-title">T-Shirt for Dogs</h2>
+                  <span class="price">$7.99</span>
+              </div>
+          </div>
+      </div>
+    </section>
+      </main>
+</body>
+</html>

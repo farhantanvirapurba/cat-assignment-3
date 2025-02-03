@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Everyday low Price */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.products {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px; 
+  margin: 0 auto;
+}
+
+.product-card {
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 46%; 
+  height: 300px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card img {
+  max-width: 70%; 
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.product-description {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Specific card background colors */
+.first-card {
+  background: linear-gradient(135deg, #d6c6f2, #b0d4ff); 
+}
+
+.second-card {
+  background: linear-gradient(135deg, #fdd475, #ffd9a1); 
+}
